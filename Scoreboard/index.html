@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="header"><p id="heading">John's Basketball Scoreboard</p></div>
+        <div class="container1">
+        <div class="block">
+            <h3 id="heading-home">HOME</h3>
+            <p class="home-score" id="home-score-el">0</p>
+            <div class="add-points-btns">
+                <button class="add-points-btns-home" onclick="addOneHome()">+1</button>
+                <button class="add-points-btns-home" onclick="addTwoHome()">+2</button>
+                <button class="add-points-btns-home" onclick="addThreeHome()">+3</button>
+            </div>
+            
+        </div>
+   
+        <div class="block">
+            <h3 id="heading-home">GUEST</h3>
+            <p class="home-score" id="guest-score-el">0</p>
+            <div class="add-points-btns">
+                <button class="add-points-btns-home" onclick="addOneGuest()">+1</button>
+                <button class="add-points-btns-home" onclick="addTwoGuest()">+2</button>
+                <button class="add-points-btns-home" onclick="addThreeGuest()">+3</button>
+            </div>
+        </div>
+        <div class="container0" id="app"></div> 
+    </div>
+    <div class="container2">
+        <div>
+            <button class="settings" onclick="newGame()">New Game</button>
+          </div>
+        <div class="settings">
+            <input type="button" onclick="starTimer()" value="Start"/>
+            <input type="button" onclick="pauseTimer()" value="Pause"/>
+            <input type="button" onclick="resumeTimer()" value="Resume"/>
+            <input type="button" onclick="resetTimer()" value="Reset Timer"/>
+         </div>
+         
+    </div>
+    
+                
+
+    <script src="index.js"></script>
+    </body>
+</html>
